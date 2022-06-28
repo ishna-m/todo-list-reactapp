@@ -17,6 +17,7 @@ function TodoList() {
   };
 
   function updateTodo (todoId, newValue) {
+    //to prevent whitespace entries from being made in the list
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
     }
